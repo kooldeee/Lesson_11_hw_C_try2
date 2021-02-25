@@ -1,0 +1,574 @@
+/* Стили обнуления */
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,500,600,700,italic,500italic,600italic,700italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+body {
+	line-height: 1;
+	color: black;
+	background-color: white;
+	font-family: Lato;
+	width: 1440px;
+}
+
+/* ------------------ */
+/* LESSON 11 */
+
+.wrapper {
+	width: 1110px;
+	height: 100%;
+	/* background-color: rgb(252, 252, 252); */
+	/* ПОДКРАСИЛ ДЛЯ СЕБЯ ЧИСТО */
+
+	margin: 0 auto;
+}
+/* ПОЧЕМУ ХЭДДЕР СМЕЩАЕТСЯ ВПРАВО ПРИ РЕЛАТИВ , ИЛИ СМЕЩАЕТ МЭЙН ПРИ ФИКСЕД ? */
+.header {
+	position: absolute;
+	width: 1440px;
+	height: 160px;
+	/* background-color: yellow;
+	opacity: 0.95;
+	z-index: 1; */
+	left: 0;
+	top: 0;
+}
+.header-logo {
+	position: absolute;
+	width: 89px;
+	height: 32px;
+	left: 165px;
+	top: 66px;
+}
+.header-logo__logo-header {
+	font-family: Playfair Display;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+
+	color: #10375c;
+}
+.header-nav {
+	position: absolute;
+	/* background-color: red; */
+	width: 562px;
+	height: 28px;
+	left: 438px;
+	top: 73px;
+}
+.header-nav__list {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 28px;
+
+	color: #222831;
+}
+
+/* ПОЧЕМУ НЕ СОВПАДАЕТ ПАДДИНГ С МАКЕТОМ ? */
+.header-nav__item {
+	display: inline-block;
+	padding-right: 36px;
+}
+
+/* ПОЧЕМУ НЕ УБИРАЕТСЯ ПАДДИНГ У ПОСЛЕДНЕГО ЛИ? ОК, УБРАЛСЯ, ТОГДА ПОЧЕМУ НЕ СОВПАДАЕТ ПАДДИНГ С МАКЕТОМ, ВВЕРХУ СМОТРИ */
+.header-nav__list li.header-nav__item:last-child {
+	padding-right: 0px;
+}
+
+.header-nav__link {
+}
+
+.header-links {
+}
+.header-links__item {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+}
+
+.header-links__link-1 {
+	position: absolute;
+	width: 92px;
+	height: 43px;
+	left: 1081px;
+	top: 61px;
+
+	padding: 12px;
+
+	/* Brand Color / Secondary */
+
+	color: #ff5722;
+	background-color: white;
+}
+
+.header-links__link-2 {
+	position: absolute;
+	width: 103px;
+	height: 43px;
+	left: 1172px;
+	top: 61px;
+
+	padding: 12px;
+
+	color: #ffffff;
+
+	background: #ff5722;
+	box-shadow: 0px 4px 16px rgba(255, 87, 34, 0.32);
+}
+
+.main {
+	width: 100%;
+	height: 1800px;
+	/* background-color: lightskyblue; */
+}
+.main-intro {
+}
+.main-intro__title {
+}
+.main-title {
+}
+.main-title__title {
+	position: absolute;
+	width: 101px;
+	height: 30px;
+	left: 165px;
+	top: 160px;
+
+	/* Body / Extra Large - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	/* identical to box height, or 150% */
+
+	color: #222831;
+}
+.main-title__line {
+	position: absolute;
+	width: 73px;
+	height: 2px;
+	left: 281px;
+	top: 177px;
+
+	/* Color / Black */
+
+	background: #222831;
+}
+.main-title__subtitle {
+	position: absolute;
+	width: 667px;
+	height: 201px;
+	left: 165px;
+	top: 198px;
+
+	/* Heading / H1 */
+
+	font-family: Lora;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 52px;
+	line-height: 67px;
+
+	/* Brand Color / Primary */
+
+	color: #10375c;
+}
+.subtitle-span {
+	color: #ff5722;
+}
+.main-intro__text {
+	position: absolute;
+	width: 382px;
+	height: 120px;
+	left: 893px;
+	top: 208px;
+
+	/* Body / Extra Large - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	/* or 150% */
+
+	color: #6a6a6a;
+}
+.main-info-white {
+}
+.white-block {
+	position: absolute;
+	width: 500px;
+	height: 353px;
+	left: 165px;
+	top: 459px;
+	/* background-color: purple; */
+}
+.white-block__list {
+}
+.white-block__item:nth-child(1) {
+	background: url(../img/0000/meeting-room\ 1.png) 0 5px / 32px 32px no-repeat;
+}
+.white-block__item:nth-child(2) {
+	background: url(../img/0000/Flag.png) 0 5px / 32px 32px no-repeat;
+}
+
+.white-block__item:nth-child(3) {
+	background: url(../img/0000/User\ 24px.png) 0 5px / 32px 32px no-repeat;
+}
+
+.white-block__item:nth-child(4) {
+	position: absolute;
+	left: 250px;
+	top: 0px;
+
+	background: url(../img/0000/circus\ 1.png) 0 5px / 32px 32px no-repeat;
+}
+
+.white-block__item:nth-child(5) {
+	position: absolute;
+	left: 250px;
+	top: 143px;
+
+	background: url(../img/0000/wifi\ 1.png) 0 5px / 32px 32px no-repeat;
+}
+
+.white-block__item:nth-child(6) {
+	position: absolute;
+	left: 250px;
+	top: 286px;
+	background: url(../img/0000/Users\ 24px.png) 0 5px / 32px 32px no-repeat;
+}
+
+.white-block__item {
+	display: inline-block;
+	width: 250px;
+	margin: 0 50px 76px 0;
+	padding: 0 0 0 65px;
+}
+
+.white-block__title {
+	font-family: Lora;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 41px;
+	/* identical to box height */
+
+	/* Brand Color / Primary */
+
+	color: #10375c;
+}
+.white-block__subtitle {
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	/* identical to box height, or 162% */
+
+	/* Color / Gray 1 */
+
+	color: #9a9a9a;
+}
+.main-info-blue {
+	position: absolute;
+	width: 540px;
+	height: 421px;
+	left: 735px;
+	top: 429px;
+	background: #10375c;
+}
+.all-titles {
+}
+.all-titles__title {
+	position: absolute;
+	width: 109px;
+	height: 30px;
+	left: 53px;
+	top: 54px;
+
+	/* Body / Extra Large - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	/* identical to box height, or 150% */
+
+	/* Color / White */
+
+	color: #ffffff;
+}
+.all-titles__line {
+	position: absolute;
+	width: 73px;
+	height: 2px;
+	left: 177px;
+	top: 68px;
+
+	/* Color / White */
+
+	background: #ffffff;
+}
+.all-titles__subtitle {
+	position: absolute;
+	width: 433px;
+	height: 102px;
+	left: 53px;
+	top: 92px;
+
+	/* Heading / H2 */
+
+	font-family: Lora;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 51px;
+
+	/* Color / White */
+
+	color: #ffffff;
+}
+.main-info-blue__text {
+	position: absolute;
+	width: 433px;
+	height: 150px;
+	left: 53px;
+	top: 218px;
+
+	/* Body / Extra Large - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	/* or 150% */
+
+	/* Color / White */
+
+	color: #ffffff;
+}
+.main-news {
+	position: absolute;
+	width: 350px;
+	height: 320px;
+	left: 165px;
+	top: 900px;
+
+	background: url("../img/0000/Rectangle\ 39.png") 0 0 no-repeat;
+}
+
+.main-news_2 {
+	left: 545px;
+	top: 900px;
+}
+.main-news_3 {
+	left: 925px;
+	top: 900px;
+}
+
+.main-news__title {
+	position: absolute;
+	width: 318px;
+	height: 56px;
+	left: 16px;
+	top: 218px;
+
+	/* Heading / H6 */
+
+	font-family: Lora;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 28px;
+
+	/* Color / Black */
+
+	color: #222831;
+}
+.main-news__name {
+	position: absolute;
+	width: 99px;
+	height: 26px;
+	left: 16px;
+	top: 278px;
+
+	/* Body / Normal - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	/* identical to box height, or 162% */
+
+	/* Color / Gray 1 */
+
+	color: #9a9a9a;
+}
+.footer {
+	position: absolute;
+	width: 1175.53px;
+	height: 225.63px;
+	left: 130px;
+
+	top: 1250px;
+	/* background-color: pink; */
+}
+.footer-title {
+	position: absolute;
+	/* width: 355px;
+	height: 51px; */
+	left: 365px;
+	top: -100px;
+	/* ПОЧЕМУ ТОП ОТРИЦИТЕЛЬНЫЙ ? */
+
+	/* Heading / H2 */
+
+	font-family: Lora;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 51px;
+
+	/* Brand Color / Primary 120% */
+}
+.title-footer {
+	color: #0d2c4a;
+}
+.footer-subtitle {
+	position: absolute;
+	/* width: 633px;
+	height: 28px; */
+	left: 376px;
+	top: 50px;
+
+	/* Body / Large - Medium */
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 28px;
+	/* identical to box height, or 156% */
+
+	text-align: center;
+
+	/* Color / Gray 1 */
+
+	color: #9a9a9a;
+}
+.footer-logos {
+}
+.footer-logos__list {
+}
+.footer-logos__item {
+}
+.footer-logo__link {
+}
+.footer-logo__link_google {
+	position: absolute;
+	width: 120px;
+	height: 39.67px;
+	left: 0px;
+	/* -132 */
+	bottom: 50px;
+	background: url("../img/0000/Google_Logo.png") 0 0 no-repeat;
+}
+.footer-logo__link_tokopedia {
+	position: absolute;
+	width: 180px;
+	height: 38.57px;
+	left: 180px;
+	/* -132 */
+	bottom: 50px;
+	background: url("../img/0000/toko_Logo.png") 0 0 no-repeat;
+}
+.footer-logo__link_upwork {
+	position: absolute;
+	width: 120px;
+	height: 35.02px;
+	left: 422px;
+	/* -132 */
+	bottom: 50px;
+	background: url("../img/0000/upwork_Logo.png") 0 0 no-repeat;
+}
+.footer-logo__link_microsoft {
+	position: absolute;
+	width: 170px;
+	height: 36.26px;
+	left: 600px;
+	/* -132 */
+	bottom: 50px;
+	background: url("../img/0000/Micro_Logo.png") 0 0 no-repeat;
+}
+.footer-logo__link_shopify {
+	position: absolute;
+	width: 145.74px;
+	height: 45.67px;
+	left: 832px;
+	/* -132 */
+	bottom: 50px;
+	background: url("../img/0000/Sopy_Logo.png") 0 0 no-repeat;
+}
+.footer-logo__link_stripe {
+	position: absolute;
+	width: 139.79px;
+	height: 66.63px;
+	left: 1035.74px;
+	/* -132 */
+	bottom: 40px;
+	background: url("../img/0000/Stripe_Logo.png") 0 0 no-repeat;
+}
+/* ПОСТАВИТЬ СПЕЙС ПО СЕРЕДИНЕ АВТО!  */
+.space {
+	position: absolute;
+	width: 1175.53px;
+	height: 225.63px;
+	left: 130px;
+	top: 1550px;
+	background-color: #10375c;
+}
